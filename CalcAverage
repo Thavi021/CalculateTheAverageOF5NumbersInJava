@@ -1,0 +1,46 @@
+/*
+caCalculatingAvereage
+@Thavi021
+To calculate the average of 5 test marks
+ */
+package cacalculatingaverage;
+import java.util.Scanner;
+
+public class CaCalculatingAverage {
+    static int intNumber1;        //You can add commas to show all the inNumbers in one line instead of seperate multiple lines
+    static int intNumber2;
+    static int intNumber3;
+    static int intNumber4;
+    static int intNumber5;
+    static double dblAvg;
+  
+    public static void main(String[] args) {
+       input();
+       calculate();
+       output();   
+    }
+
+    private static void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Mark1: ");
+        intNumber1 = sc.nextInt();
+        System.out.print("Enter Mark2: ");
+        intNumber2 = sc.nextInt();
+        System.out.print("Enter Mark3: ");
+        intNumber3 = sc.nextInt ();
+        System.out.print("Enter Mark4: ");
+        intNumber4 = sc.nextInt();
+        System.out.print("Enter Mark5: ");
+        intNumber5 = sc.nextInt();
+    }
+
+    private static void calculate() {
+        dblAvg = (intNumber1 + intNumber2 + intNumber3 + intNumber4 + intNumber5)/5;
+        
+    }
+
+    private static void output() {
+        System.out.print("Your Average is: " + dblAvg);
+    }
+   
+}
